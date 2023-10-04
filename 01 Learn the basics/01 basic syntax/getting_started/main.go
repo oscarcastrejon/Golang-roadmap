@@ -2,9 +2,11 @@
 
 // Call code in an external package.
 
+// =====================================================================
 // To run it:
 // go run main.go
 
+// =====================================================================
 // This method to run, only works when a module was created.
 // go run .
 
@@ -17,5 +19,5 @@ import (
 )
 
 func main() {
-	fmt.Println(quote.Go())
+	fmt.Println(quote.Go()) // OUTPUT: Don't communicate by sharing memory, share memory by communicating.
 }

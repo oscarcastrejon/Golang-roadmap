@@ -26,11 +26,11 @@
 // There are some small differences between the var and :=
 
 // var
-// Can be used inside and outside of functions
+// Can be used inside and outside of functions.
 // Variable declaration and value assignment can be done separately.
 
 // :=
-// Can only be used inside functions
+// Can only be used inside functions.
 // Variable declaration and value assignment cannot be done separately
 // (must be done in the same line).
 
@@ -48,24 +48,24 @@ var c, python, java bool
 func variables1() {
 	var i int
 
-	fmt.Println(i, c, python, java)
+	fmt.Println("V1: ", i, c, python, java) // OUTPUT: V1:  0 false false false
 }
 
 func variables2() {
 	var a = "initial"
-	fmt.Println("V2: ", a)
+	fmt.Println("V2: ", a) // OUTPUT: V2:  initial
 
 	var b, c int = 1, 2
-	fmt.Println("V2: ", b, c)
+	fmt.Println("V2: ", b, c) // OUTPUT: V2:  1 2
 
 	var d = true
-	fmt.Println("V2: ", d)
+	fmt.Println("V2: ", d) // OUTPUT: V2:  true
 
 	var e int
-	fmt.Println("V2: ", e)
+	fmt.Println("V2: ", e) // OUTPUT: V2:  0
 
 	f := "apple"
-	fmt.Println("V2: ", f)
+	fmt.Println("V2: ", f) // OUTPUT: V2:  apple
 }
 
 func variables3() {
@@ -74,24 +74,24 @@ func variables3() {
 	var student2 = "Jane"        //type is inferred
 	x := 2                       //type is inferred
 
-	fmt.Println("V3: ", student1)
-	fmt.Println("V3: ", student2)
-	fmt.Println("V3: ", x)
+	fmt.Println("V3: ", student1) // OUTPUT: V3:  John
+	fmt.Println("V3: ", student2) // OUTPUT: V3:  Jane
+	fmt.Println("V3: ", x)        // OUTPUT: V3:  2
 
 	// Variable Declaration Without Initial Value.
 	var a string
 	var b int
 	var c bool
 
-	fmt.Println("V3: ", a)
-	fmt.Println("V3: ", b)
-	fmt.Println("V3: ", c)
+	fmt.Println("V3: ", a) // OUTPUT: V3:
+	fmt.Println("V3: ", b) // OUTPUT: V3:  0
+	fmt.Println("V3: ", c) // OUTPUT: V3:  false
 
-	// Value Assignment After Declaration
+	// Value Assignment After Declaration.
 	var student3 string
 	student3 = "John"
 
-	fmt.Println("V3: ", student3)
+	fmt.Println("V3: ", student3) // OUTPUT: V3:  John
 }
 
 func main() {

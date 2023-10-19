@@ -6,7 +6,7 @@
 
 // Golang also support to define our own function types.
 
-// The modified version of above program with function types as below:
+// The modified version of past program with function types as below:
 
 // =====================================================================
 // To run it:

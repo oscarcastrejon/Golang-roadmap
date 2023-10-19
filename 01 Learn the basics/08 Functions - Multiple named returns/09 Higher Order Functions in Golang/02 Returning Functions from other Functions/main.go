@@ -12,7 +12,7 @@
 
 // Returning Functions from other Functions
 
-// In the program above, the squareSum function signature specifying
+// In the program bellow, the squareSum function signature specifying
 // that function returns two functions and one integer value.
 
 // =====================================================================
@@ -30,6 +30,7 @@ func squareSum(x int) func(int) func(int) int {
 		}
 	}
 }
+
 func main() {
 	// 5*5 + 6*6 + 7*7
 	fmt.Println(squareSum(5)(6)(7))
